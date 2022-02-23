@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("./assets/djdeck.jpg");
+}
+
+.soundPadContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    gap: 10px;
+}
+
+.soundPad {
+    display: flex;
+    color: aliceblue;
+    border: 1px solid salmon;
+    height: 75px;
+    width: 75px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 5px black;
+    transition: all 0.07s;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 10px #ffc600;
+}
